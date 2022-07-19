@@ -1,6 +1,6 @@
-const express = require('express');
-const path = require('path');
-const MongoClient = require("mongodb").MongoClient;
+import express from "express";
+import { MongoClient } from "mongodb";
+import path from "path";
 
 const app = express();
 app.use(express.static(path.join(__dirname, '..', 'public')));

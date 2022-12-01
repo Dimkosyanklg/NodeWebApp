@@ -1,14 +1,14 @@
 import { client } from "./clients";
-import { UserRegisterModel } from "./userTypes";
+import { UserAuthModel, UserModel } from "./userTypes";
 
-export const registerUser = async (request: UserRegisterModel) => {
-    const { data } = await client.post<any>(`/auth/register`, request);
+export const registerUser = async (request: UserAuthModel) => {
+    const { data } = await client.post<UserModel>(`/auth/register`, request);
 
     return data;
 };
 
-export const loginUser = async (request: UserRegisterModel) => {
-    const { data } = await client.post<any>(`/auth/login`, request);
+export const loginUser = async (request: UserAuthModel) => {
+    const { data } = await client.post<UserModel>(`/auth/login`, request);
 
     return data;
 };

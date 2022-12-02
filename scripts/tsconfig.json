@@ -1,21 +1,35 @@
 {
     "compilerOptions": {
-        "target": "ESNext",
-        "useDefineForClassFields": true,
-        "lib": ["DOM", "DOM.Iterable", "ESNext"],
-        "allowJs": false,
         "skipLibCheck": true,
-        "esModuleInterop": false,
         "allowSyntheticDefaultImports": true,
-        "strict": true,
-        "forceConsistentCasingInFileNames": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "strictNullChecks": true,
         "module": "ESNext",
-        "moduleResolution": "Node",
+        "lib": [
+            "es2019",
+            "DOM",
+            "DOM.Iterable"
+        ],
+        "target": "ES2016",
+        "esModuleInterop": true,
+        "jsx": "react",
         "resolveJsonModule": true,
-        "isolatedModules": true,
-        "noEmit": false,
-        "jsx": "react-jsx",
-        "baseUrl": "./"
+        "allowJs": true,
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "baseUrl": "./",
+        "paths": {
+            "@src/*": [
+                "src/*"
+            ]
+        },
+        "strict": true
+        // TODO: Добавить
+        // "noUncheckedIndexedAccess": true
     },
-    "include": ["src", "src/**/*.ts", "src/**/*.tsx"]
+    "include": [
+        "src"
+    ]
 }

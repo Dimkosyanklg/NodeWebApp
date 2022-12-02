@@ -1,12 +1,17 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-    background-color: #dcdcde;
+    background-color: #ededed;
     height: 100%;
 `;
 
 export const Content = styled.div`
-    width: 750px;
+    display: grid;
+    grid-template-columns: 0.7fr 2fr 1fr;
+    grid-template-areas: "leftMenu content rightMenu";
+    column-gap: 16px;
+    width: 1000px;
     margin: 0 auto;
-    border: 1px solid black;
 `;
+
+export const LayoutGridAreas = { leftMenu: "leftMenu", content: "content", rightMenu: "rightMenu" };

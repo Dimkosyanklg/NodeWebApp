@@ -19,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
   html {
     height: 100%;
   }
-`;
+` as any;
 
 export const Layout: React.FC<Props> = ({ header, children }) => {
     return (

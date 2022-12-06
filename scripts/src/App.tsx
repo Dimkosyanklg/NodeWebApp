@@ -1,6 +1,5 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import { RoundBlock } from "./components/core";
 import { Layout } from "./components/layout";
 import { Auth } from "./features/Auth/Auth";
 import { Header } from "./features/header/Header";

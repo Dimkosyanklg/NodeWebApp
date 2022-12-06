@@ -4,6 +4,7 @@ import * as s from "./Layout.styled";
 
 type Props = {
     header: React.ReactNode;
+    children?: React.ReactNode;
 };
 
 const GlobalStyle = createGlobalStyle`
